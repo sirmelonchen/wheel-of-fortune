@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/konstantinbeug/GitHub/wheel-of-fortune",
+      "program": "/Users/konstantinbeug/GitHub/wheel-of-fortune/build/Debug/outDebug"
+    }
+  ]
+}

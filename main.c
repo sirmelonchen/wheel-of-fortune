@@ -31,7 +31,6 @@ void fileread(){
 
 int main() {
     fileread();
-    
     return 0;
 }
 

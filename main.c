@@ -30,9 +30,8 @@ void fileread(){
 
 
 int main() {
-
-    printf("Hello World!");
     fileread();
+    
     return 0;
 }
 

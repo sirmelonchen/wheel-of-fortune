@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-
+gggg
 void filecreate() {
     FILE *fptr;
     fptr = fopen("wheel.txt", "w");

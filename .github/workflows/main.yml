@@ -18,8 +18,8 @@ jobs:
         # Compiler to install
           compiler: gcc-latest
       - name: Make executable
-        run: gcc main.c
+        run: gcc *.c
       - name: Del Test Executable
-        run: rm a.out
+        run: rm *.out
               
               

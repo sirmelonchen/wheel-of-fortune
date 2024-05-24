@@ -11,19 +11,20 @@ void filecreate() {
 
 
 void fileread(){
-    char myString[100];
-    FILE *fptr;
-    fptr = fopen("wheel.txt", "r");
-    if (fptr == NULL)
+  // count the number of lines in the file called filename                                    
+  FILE *fp = fopen("wheel.txt","r");
+  int ch=0;
+  int lines=0;
+
+
+  lines++;
+  while ((ch = fgetc(fp)) != EOF)
     {
-        printf("Wir können die Datei \"wheel.txt\" nicht öffnen.\n Es wird eine neue Datei erstellt.\n Bitte das Programm neustarten." );
-        filecreate();
-        exit(0);
-    }else{
-        while(fgets(myString, 100, fptr)) {
-            printf("%s\n", myString);
-  }
+      if (ch == '\n')
+    lines++;
     }
+  fclose(fp);
+  printf("%d", lines);
     
 }
 
